@@ -44,18 +44,18 @@
 	1620 network(s) added
 
 ## Deleting IP-ranges
-RemoteSplit [test]>list ranges
-      1) 192.168.1.1-10
-      2) 5.206.232.1-254
-      3) 5.206.233.1-254
-         ...
-   1621) 217.73.143.1-254
+	RemoteSplit [test]>list ranges
+		  1) 192.168.1.1-10
+		  2) 5.206.232.1-254
+		  3) 5.206.233.1-254
+		     ...
+	   1621) 217.73.143.1-254
 
-RemoteSplit [test]>del 2
-5.206.232.1-254 removed from list and list new arranged!
+	RemoteSplit [test]>del 2
+	5.206.232.1-254 removed from list and list new arranged!
 
-RemoteSplit [test]>del all
-All IP-ranges deleted ... 
+	RemoteSplit [test]>del all
+	All IP-ranges deleted ... 
 
 ## Scanning
 	RemoteSplit [test]>run scan
