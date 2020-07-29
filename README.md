@@ -1,7 +1,7 @@
-#remote-sploit 
+# remote-sploit 
 **Automated exploitation tool for SSH and RDP**
 
-##Starting
+## Starting
 	$ **./remotesploit.py**
 	 ______                        __          _______         __         __ __   
 	|   __ \.-----.--------.-----.|  |_.-----.|     __|.-----.|  |.-----.|__|  |_ 
@@ -17,18 +17,18 @@
 
 	RemoteSplit [unnamed]>
 
-##Creating a project
+## Creating a project
 	RemoteSplit [unnamed]>**create test2**
 	Project "test2" created
 
-##Switching projects
+## Switching projects
 	RemoteSplit [test2]>**use test**
 	Loading scan-counter:      1 scanned, 0 cracked
 	Setting password list:     
 	Setting username list:     
 	Setting comined loginlist: 
 
-##Adding ip-ranges
+## Adding IP-ranges
 	RemoteSplit [test]>**add 192.168.1.1-10**
 	1 network(s) added
 
@@ -37,13 +37,27 @@
 	  2) ALAND+ISLANDS
 	  3) ALBANIA
 	  4) ALGERIA
-	...
+	     ...
 	240) ZIMBABWE
 
 	RemoteSplit [test]>**add 3**
 	1620 network(s) added
 
-##Scanning
+## Deleting IP-ranges
+RemoteSplit [test]>**list ranges**
+      1) 192.168.1.1-10
+      2) 5.206.232.1-254
+      3) 5.206.233.1-254
+         ...
+   1621) 217.73.143.1-254
+
+RemoteSplit [test]>**del 2**
+5.206.232.1-254 removed from list and list new arranged!
+
+RemoteSplit [test]>**del all**
+All IP-ranges deleted ... 
+
+## Scanning
 	RemoteSplit [test]>**run scan**
 	Scanning 192.168.1.1-10 [1 / 3]
 	192.168.1.2:22
@@ -53,7 +67,7 @@
 	Scanning 192.168.1.100-110 [2 / 3]
 	Scanning 192.168.1.111-120 [3 / 3]
 
-##Listing ranges / hosts / wordlists
+## Listing ranges / hosts / wordlists / ...
 
 	RemoteSplit [test]>**list ranges**
 		  1) 192.168.1.1-10
@@ -75,15 +89,15 @@
 	  7) rdp_users.lst
 	  8) ssh_users.lst
 
-##Setting wordlist
+## Setting wordlist
 	RemoteSplit [test]>**set loginlist 4**
 	Setting combined login-list: /home/markb/Projects/remote_sploit/wordlists/testlogins_en_short.lst
 
-##Run cracker
+## Run cracker
 	RemoteSplit [test]>**run logintest**
 	Cracking 192.168.1.2:22 [1 / 3]
 
-##Getting help
+## Getting help
 	RemoteSplit [test]>**?**
 
 	Documented commands (type help <topic>):
@@ -101,3 +115,7 @@
 	pwlist ...... password list 
 	userlist .... user list 
 	loginlist ... compined list login:password 
+
+## Exit remote-sploit
+	RemoteSplit [test]>**quit**
+	Bye!
