@@ -49,7 +49,7 @@
 		  2) 5.206.232.1-254
 		  3) 5.206.233.1-254
 		     ...
-	   1621) 217.73.143.1-254
+       1621) 217.73.143.1-254
 
 	RemoteSplit [test]>del 2
 	5.206.232.1-254 removed from list and list new arranged!
