@@ -330,7 +330,7 @@ class RemoteSploit(cmd.Cmd):
                     self.print_error("There are no cracked accounts till now...")
             
         else:
-            self.print_error("Unknown list-type: " + list_type + '\nUse "help list" to get all available list-types!')
+            self.print_error("Unknown list-type: " + list_type[0] + '\nUse "help list" to get all available list-types!')
 
         print("")
 
