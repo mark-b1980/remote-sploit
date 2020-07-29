@@ -1,7 +1,7 @@
-#remote-sploit 
+# remote-sploit 
 **Automated exploitation tool for SSH and RDP**
 
-##Starting
+## Starting
 	$ **./remotesploit.py**
 	 ______                        __          _______         __         __ __   
 	|   __ \.-----.--------.-----.|  |_.-----.|     __|.-----.|  |.-----.|__|  |_ 
@@ -17,18 +17,18 @@
 
 	RemoteSplit [unnamed]>
 
-##Creating a project
+## Creating a project
 	RemoteSplit [unnamed]>**create test2**
 	Project "test2" created
 
-##Switching projects
+## Switching projects
 	RemoteSplit [test2]>**use test**
 	Loading scan-counter:      1 scanned, 0 cracked
 	Setting password list:     
 	Setting username list:     
 	Setting comined loginlist: 
 
-##Adding ip-ranges
+## Adding ip-ranges
 	RemoteSplit [test]>**add 192.168.1.1-10**
 	1 network(s) added
 
