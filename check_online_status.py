@@ -116,8 +116,8 @@ def wait_for_connection(test_delay):
             r = requests.get("https://" + random.choice(URLLIST), timeout=2.0).status_code
         except requests.exceptions.ConnectionError:
             r = 0
-		except requests.exceptions.ReadTimeout:
-			r = 0
+        except requests.exceptions.ReadTimeout:
+            r = 0
 
         if r == 0:
             print("waiting for internet connection ...")
